@@ -38,12 +38,12 @@
     function countWords(text)
     {
         
-        if(text.charAt(0)===null){
-        return 0;}
+        if(!text.charAt(0))
+        {
+         return 0;
+        }
         var words=text.split(' ');
-       
-        
-            return words.length;
+        return words.length;
         
     }
     function countSentences(text)
